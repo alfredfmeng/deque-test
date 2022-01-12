@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+  cursor: default;
+}
+
+#tr-character:hover {
+  background-color: #f2f2f2;
+}
+
+#th-name:hover,
+#th-FGA:hover,
+#th-img:hover {
+  background-color: hsl(0, 3%, 71%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 100px) {
+  .App {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
