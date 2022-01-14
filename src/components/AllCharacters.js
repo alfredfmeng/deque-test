@@ -12,7 +12,7 @@ export default function AllCharacters(props) {
               Name
             </th>
             <th id="th-FGA" onClick={(evt) => clickHandler(evt)}>
-              First Game Appearnce
+              First Game Appearance
             </th>
             <th id="th-img">Image</th>
           </tr>
