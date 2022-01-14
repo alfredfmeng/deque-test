@@ -16,7 +16,7 @@ class App extends Component {
   async componentDidMount() {
     try {
       const response = await axios.get(
-        "https://www.giantbomb.com/api/characters/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8&format=json&limit=50&sort=name:asc"
+        "/api/characters/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8&format=json&limit=50&sort=name:asc"
       );
       this.setState({ characters: response.data.results });
     } catch (error) {
@@ -26,7 +26,7 @@ class App extends Component {
 
   selectCharacter = async (characterId) => {
     const response = await axios.get(
-      `https://www.giantbomb.com/api/character/${characterId}/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8&format=json`
+      `/api/character/${characterId}/?api_key=ea98adc584efb356fcd14b949f8a9f2aa2b270b8&format=json`
     );
     const selectedCharacter = response.data.results;
     this.setState({ selectedCharacter });
